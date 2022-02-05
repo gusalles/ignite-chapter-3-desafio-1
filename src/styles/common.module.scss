@@ -1,1 +1,56 @@
-// TODO
+@mixin container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@mixin title {
+  font-family: 'Inter';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+  color: var(--heading-color);
+  text-align: justified;
+}
+
+@mixin subtitle {
+  font-family: 'Inter';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: var(--body-color);
+  text-align: justified;
+}
+
+@mixin info {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: var(--info-color);
+  text-align: left;
+}
+
+@mixin infoContainer {
+  display: flex;
+  align-items: center;
+
+  span {
+    display: flex;
+    align-items: center;
+
+    margin-right: 24px;
+
+    @include info;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}

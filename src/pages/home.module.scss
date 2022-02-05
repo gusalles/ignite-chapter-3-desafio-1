@@ -1,1 +1,46 @@
-// TODO
+@import '../styles/common.module.scss';
+
+.bodyContainer {
+  @include container;
+}
+
+.bodyContent {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  a {
+    margin-bottom: 40px;
+
+    h3 {
+      @include title;
+      margin-bottom: 8px;
+    }
+
+    p {
+      @include subtitle;
+    }
+  }
+}
+
+.infoContainer {
+  @include infoContainer;
+
+  margin-top: 25px;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: var(--highlight-color);
+}

@@ -1,7 +1,22 @@
+// Colors
+:root {
+  --highlight-color: #ff57b2;
+  --heading-color: #f8f8f8;
+  --background-color: #1a1d23;
+  --info-color: #bbbbbb;
+  --body-color: #d7d7d7;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// TODO
+body {
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,1 +1,43 @@
-// TODO
+@import '../../styles/common.module.scss';
+
+.postContainer {
+  width: 100%;
+
+  img {
+    width: inherit;
+    max-height: 400px;
+  }
+}
+
+.bodyContainer {
+  @include container;
+  margin: 80px auto;
+
+  h1 {
+    @include title;
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.infoContainer {
+  @include infoContainer;
+
+  margin: 25px 0 64px;
+}
+
+.postContent {
+  h2 {
+    @include title;
+    margin: 64px 0;
+  }
+
+  div {
+    text-align: justify;
+
+    p {
+      @include subtitle;
+      margin-bottom: 24px;
+    }
+  }
+}
