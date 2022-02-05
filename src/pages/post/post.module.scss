@@ -21,9 +21,15 @@
 }
 
 .infoContainer {
-  @include infoContainer;
-
   margin: 25px 0 64px;
+
+  div {
+    @include infoContainer;
+
+    & + div {
+      margin-top: 16px;
+    }
+  }
 }
 
 .postContent {
@@ -39,5 +45,34 @@
       @include subtitle;
       margin-bottom: 24px;
     }
+  }
+}
+
+.previewContainer {
+  a {
+    @include preview;
+  }
+}
+
+.navigationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(215, 215, 215, 0.1);
+
+  h3 {
+    @include subtitle;
+    margin-top: 48px;
+  }
+
+  a {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    color: var(--highlight-color);
+    margin-top: 8px;
+    display: block;
   }
 }

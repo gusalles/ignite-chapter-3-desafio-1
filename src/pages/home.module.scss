@@ -44,3 +44,9 @@
   text-align: justify;
   color: var(--highlight-color);
 }
+
+.previewContainer {
+  a {
+    @include preview;
+  }
+}
